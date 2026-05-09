@@ -20,8 +20,8 @@ func render_field() -> void:
 	cbounds.position -= cbounds.size / 2
 
 	var gstep: Vector2i = varrow_size * 2
-	var tcols: int = cbounds.size.x / gstep.x + 2
-	var trows: int = cbounds.size.y / gstep.y + 2
+	var tcols := cbounds.size.x / gstep.x + 2 as int
+	var trows := cbounds.size.y / gstep.y + 2 as int
 	var start: Vector2i = floor(cbounds.position / (gstep as Vector2)) as Vector2i * gstep
 	
 	# Spawn an arrow according to a grid starting with the top left closest to the viewport.

@@ -27,7 +27,6 @@ func handle_camera(delta: float) -> void:
 	
 	z_velocity += z_inertia * delta
 	
-	#  
 	camera_zpos = clamp(camera_zpos + z_velocity, 0.5, camera_zposmax)
 
 	# S_app / S_real (1) = 1 / z_pos

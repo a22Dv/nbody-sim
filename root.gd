@@ -34,7 +34,7 @@ func _input(event: InputEvent) -> void:
 		
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var mpos := get_global_mouse_position()
 	cursorlabel.global_position = mpos + Vector2(5, 5)
 	cursorlabel.text = "INIT_MASS: %.2f units\nINIT_VELO: %.2f m/s^2\nINIT_ROT: %.2f DEG" % [initial_mass, initial_velo, -initial_rotation * 180 / PI]
