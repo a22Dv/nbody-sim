@@ -1,0 +1,11 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+assets/
+scenes/
+*.svg
+*.tscn
+*.godot
+.editorconfig
+*.import
+*.uid
